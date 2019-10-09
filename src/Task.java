@@ -3,6 +3,7 @@
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.lang.String;
 import java.util.Scanner;
 
@@ -10,12 +11,16 @@ import java.util.Scanner;
 
 public class Task
 {
+
     public String project;
     public String title;
     public String date;
     public boolean status;
 
-    public static void main(String[] args) {
+
+    public static void main(String[] args)
+    {
+
 
         Scanner inputTask = new Scanner(System.in);
 
@@ -23,36 +28,38 @@ public class Task
         System.out.println("enter title : ");
 
         String title = task.nextLine();
-        //System.out.println("title : " + title);
 
-        //System.out.println(date);
-
-       // Scanner date = new Scanner(System.in);
         System.out.println("enter due date (dd/mm/yyyy) : ");
-        String userDueDate = task.nextLine();
-        //int userDate = Integer.parseInt(userDueDate);
-        //int length = userDueDate.length();
+        String userDueDateInput = task.nextLine();
 
-        try {
-            DateFormat format = new SimpleDateFormat("dd/mm/yyyy");
-            format.setLenient(false);
-            format.parse(userDueDate);
-            System.out.println(userDueDate + " date is valid");
 
-        } catch (ParseException e) {
-            System.out.println(userDueDate + " date is invalid");
+        while(true)
+        {
+            Date validDate=null;
+            try {
+                DateFormat format = new SimpleDateFormat("dd/mm/yyyy");
+                format.setLenient(false);
+                validDate = format.parse(userDueDateInput);
+                System.out.println(userDueDateInput + " date is valid");
 
-            // ask the user to rewrite
-            // do a loop until the date is correct
+            } catch (ParseException e) {
+                System.out.println(userDueDateInput + " date is invalid");
 
+
+                System.out.println("please enter the date again");
+
+                // ask the user to rewrite
+                // do a loop until the date is correct
+
+            }
+
+            System.out.println("  Task  " + '\n' + "title : " + title + '\n' + "due date : " + validDate);
+            break;
         }
 
-        //String Date = task.nextLine();
-        //System.out.println("date : " + dueDate );
+    } // end of the main method
 
-        System.out.println("  Task  " + '\n' + "title : " + title + '\n' + "due date : " + userDueDate);
-    }
-}
+} // end of the class
 
 
 

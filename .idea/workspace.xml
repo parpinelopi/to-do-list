@@ -2,17 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0fe97b1b-7053-4387-a721-7ed91b3371eb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Exit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Project.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Task.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TaskManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Checklist/collections/ToDoLy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Checklist/taskTitleDate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ToDoLy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/taskTitleDate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Checklist/Task.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Checklist/Task.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Project.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Task.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -150,7 +143,10 @@
       <workItem from="1570571982046" duration="1186000" />
       <workItem from="1570606055296" duration="1696000" />
       <workItem from="1570607961410" duration="1342000" />
-      <workItem from="1570609831269" duration="487000" />
+      <workItem from="1570609831269" duration="1767000" />
+      <workItem from="1570611812687" duration="1686000" />
+      <workItem from="1570613801067" duration="1667000" />
+      <workItem from="1570615613091" duration="1029000" />
     </task>
     <servers />
   </component>
@@ -175,7 +171,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Task.java</url>
-          <line>31</line>
+          <line>32</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
