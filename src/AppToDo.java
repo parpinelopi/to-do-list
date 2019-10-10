@@ -9,19 +9,46 @@ public class AppToDo {
 
     public static void main(String[] args) {
 
+    /*String menuInput;
 
+    Scanner menu = new Scanner(System.in);
+
+    while(true) {
 
         System.out.println(" Welcome to toDoLY");
-        System.out.println("You can have X (method that will sort the tasks to do and) and Y tasks are done. ");
+        //("You can have X (method that will sort the tasks to do and) and Y tasks are done. " Should be displyed.
 
-        System.out.println("Pick an option: ");
-        System.out.println("Show task list (sort by date or project)");
-        System.out.println("Add new task");
-        System.out.println("Edit task");
-        System.out.println("Save and quit");
+        System.out.println(" Menu ");
+        System.out.println("1. Show task list (sort by date or project");
+        System.out.println("2. Add new task ");
+        System.out.println("3. Edit task ");
+        System.out.println("4. Save and quit ");
+        System.out.println("Enter your choice from the menu ");
 
-//System.out.println( "enter project:");
-        //setProject(userInput.nextLine());
+        menuInput = menu.next();
+
+        // switch cases written according to options in the menu, 1..2..3 etc.
+        switch (menuInput) {
+            case "1":
+                System.out.println("show");
+                break;
+            case "2":
+                System.out.println("add");
+
+                break;
+            case "3":
+                System.out.println("edit");
+                break;
+            case "4":
+                System.out.println("Save and quit");
+                // call a save method
+                menu.close();
+                break;
+            default:
+                System.out.println("You have entered invalid choice. Please try again");
+
+        }
+    } */
 
         ArrayList<Task> tasks = new ArrayList<Task>();
         Scanner userInput = new Scanner(System.in);
@@ -58,22 +85,10 @@ public class AppToDo {
         }
 
         Date dueDate = validDate;
-        //parse
-        //would it be best to set that undone by default and then change it.
         Task task = new Task(project, title, dueDate);
-
-
-
+        tasks.add(task);
 
         System.out.println(tasks.size());
-
-        //System.out.println("enter due date (dd/mm/yyyy) : ");
-        //String userDueDateInput = task.nextLine();
-
-
-
-                // switch(scanner.nextLine()) {
-                //case "Show task list":
 
 
 
