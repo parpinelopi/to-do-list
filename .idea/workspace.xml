@@ -2,10 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0fe97b1b-7053-4387-a721-7ed91b3371eb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/out/production/Checklist/AppToDo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Checklist/TaskManager$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Checklist/TaskManager$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AppToDo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Checklist/Project.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Checklist/SaveExit.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Checklist/SaveExit.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Checklist/Task.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Checklist/Task.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Project.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Checklist/TaskManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Checklist/TaskManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Project.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SaveExit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SaveExit.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Task.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TaskManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TaskManager.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,6 +60,13 @@
     </option>
   </component>
   <component name="RunManager" selected="Application.Task">
+    <configuration name="AppToDo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="AppToDo" />
+      <module name="Checklist" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Project" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Collections.Project" />
       <module name="Checklist" />
@@ -94,6 +110,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Task" />
+        <item itemvalue="Application.AppToDo" />
         <item itemvalue="Application.Project" />
         <item itemvalue="Application.taskTitleDate" />
         <item itemvalue="Application.ToDoLy" />
@@ -146,7 +163,21 @@
       <workItem from="1570609831269" duration="1767000" />
       <workItem from="1570611812687" duration="1686000" />
       <workItem from="1570613801067" duration="1667000" />
-      <workItem from="1570615613091" duration="1029000" />
+      <workItem from="1570615613091" duration="1439000" />
+      <workItem from="1570618146361" duration="811000" />
+      <workItem from="1570619956707" duration="1775000" />
+      <workItem from="1570621955230" duration="651000" />
+      <workItem from="1570630454426" duration="1908000" />
+      <workItem from="1570632419329" duration="1359000" />
+      <workItem from="1570691613562" duration="1809000" />
+      <workItem from="1570693446626" duration="1649000" />
+      <workItem from="1570695255136" duration="1797000" />
+      <workItem from="1570697083680" duration="1497000" />
+      <workItem from="1570698896103" duration="1172000" />
+      <workItem from="1570700706371" duration="1684000" />
+      <workItem from="1570704061616" duration="1611000" />
+      <workItem from="1570705882541" duration="1785000" />
+      <workItem from="1570707691951" duration="1038000" />
     </task>
     <servers />
   </component>
@@ -165,16 +196,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Task.java</url>
-          <line>32</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

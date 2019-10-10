@@ -3,74 +3,78 @@
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 import java.lang.String;
 import java.util.Scanner;
 
 
 
-public class Task
-{
+public class Task {
 
-    public String project;
-    public String title;
-    public String date;
-    public boolean status;
+    public static void main(String[] args) {
 
+    }
+    private String Project;
+    private static String Title;
+    private Date DueDate;
+    private boolean Status;
 
-    public static void main(String[] args)
-    {
+    //add main method
 
-
-        Scanner inputTask = new Scanner(System.in);
-
-        Scanner task = new Scanner(System.in);
-        System.out.println("enter title : ");
-
-        String title = task.nextLine();
-
-        System.out.println("enter due date (dd/mm/yyyy) : ");
-        String userDueDateInput = task.nextLine();
-
-
-        while(true)
-        {
-            Date validDate=null;
-            try {
-                DateFormat format = new SimpleDateFormat("dd/mm/yyyy");
-                format.setLenient(false);
-                validDate = format.parse(userDueDateInput);
-                System.out.println(userDueDateInput + " date is valid");
-
-            } catch (ParseException e) {
-                System.out.println(userDueDateInput + " date is invalid");
-
-
-                System.out.println("please enter the date again");
-
-                // ask the user to rewrite
-                // do a loop until the date is correct
-
-            }
-
-            System.out.println("  Task  " + '\n' + "title : " + title + '\n' + "due date : " + validDate);
-            break;
-        }
-
-    } // end of the main method
-
-} // end of the class
-
-
-
-
-    /*public static void addTask() {
-        ArrayList<Task>.add(System.in);
+    public Task(String project, String title, Date dueDate) {
+        Project = project; //if else statement to check if project exists
+        Title = title;
+        DueDate = dueDate;
+        Status = false;
     }
 
-    public static boolean check() {
-        if (task == true) {
-            System.out.println("The task "+ task + " is done" );
-         else { System.out.println("The task " + task + "needs to be done");
-        }
-    } */
+    //setter
+    public void setProject(String project){
+        this.Project = project;
+    }
+
+    //getter
+    public String getProject(){
+        return Project;}
+
+    public void setTitle(String title){
+        this.Title = title;
+    }
+
+    public String  getTitle (){
+        return Title;
+    }
+
+    public Date getDueDate (){
+        return DueDate;
+    }
+
+    public boolean status (){
+        return Status;
+    }
+
+    public void taskDone (){
+        Status=true;
+    }
+    public void changeTitle(String newTitle){
+        Title=newTitle;
+    }
+
+    public void changeDueDate(Date newDueDate){
+        DueDate=newDueDate;
+    }
+
+    public void changeProject(String project){
+        Project=project;
+    }
+
+
+}
+
+
+
+
+
+
+
