@@ -7,50 +7,14 @@ import java.util.*;
 
 public class AppToDo {
 
-    public static void main(String[] args) {
+    //public static void main(String[] args) {
 
-    /*String menuInput;
+    //    Interface screen = new Interface();
 
-    Scanner menu = new Scanner(System.in);
+    //   ArrayList<Task> tasks = new ArrayList<Task>();
+    //    screen.startScreen (tasks);
 
-    while(true) {
-
-        System.out.println(" Welcome to toDoLY");
-        //("You can have X (method that will sort the tasks to do and) and Y tasks are done. " Should be displyed.
-
-        System.out.println(" Menu ");
-        System.out.println("1. Show task list (sort by date or project");
-        System.out.println("2. Add new task ");
-        System.out.println("3. Edit task ");
-        System.out.println("4. Save and quit ");
-        System.out.println("Enter your choice from the menu ");
-
-        menuInput = menu.next();
-
-        // switch cases written according to options in the menu, 1..2..3 etc.
-        switch (menuInput) {
-            case "1":
-                System.out.println("show");
-                break;
-            case "2":
-                System.out.println("add");
-
-                break;
-            case "3":
-                System.out.println("edit");
-                break;
-            case "4":
-                System.out.println("Save and quit");
-                // call a save method
-                menu.close();
-                break;
-            default:
-                System.out.println("You have entered invalid choice. Please try again");
-
-        }
-    } */
-
-        ArrayList<Task> tasks = new ArrayList<Task>();
+    public void taskAdd(ArrayList<Task> tasks) {
         Scanner userInput = new Scanner(System.in);
 
 
@@ -87,11 +51,10 @@ public class AppToDo {
         Date dueDate = validDate;
         Task task = new Task(project, title, dueDate);
         tasks.add(task);
-
         System.out.println(tasks.size());
-
 
 
 //start application from here
     }
+
 }

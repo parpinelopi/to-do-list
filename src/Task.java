@@ -12,9 +12,9 @@ import java.util.Scanner;
 
 public class Task {
 
-    public static void main(String[] args) {
 
-    }
+
+
     private String Project;
     private static String Title;
     private Date DueDate;
@@ -28,7 +28,9 @@ public class Task {
         DueDate = dueDate;
         Status = false;
     }
+    public Task() {
 
+    }
     //setter
     public void setProject(String project){
         this.Project = project;

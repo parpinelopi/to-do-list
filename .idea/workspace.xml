@@ -2,11 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0fe97b1b-7053-4387-a721-7ed91b3371eb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Interface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Checklist/AppToDo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Checklist/AppToDo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Checklist/Task.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Checklist/Task.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Checklist/TaskManager$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Checklist/TaskManager$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Checklist/TaskManager$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Checklist/TaskManager$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Checklist/TaskManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Checklist/TaskManager.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AppToDo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppToDo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Task.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TaskManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TaskManager.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,9 +57,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.AppToDo">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="AppToDo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="AppToDo" />
+      <module name="Checklist" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Checklist" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -79,19 +92,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ToDoLy" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="collections.ToDoLy" />
-      <module name="Checklist" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="collections.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="taskTitleDate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="taskTitleDate" />
       <module name="Checklist" />
@@ -101,11 +101,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.AppToDo" />
         <item itemvalue="Application.Task" />
         <item itemvalue="Application.Project" />
         <item itemvalue="Application.taskTitleDate" />
-        <item itemvalue="Application.ToDoLy" />
       </list>
     </recent_temporary>
   </component>
@@ -174,7 +174,15 @@
       <workItem from="1570711518195" duration="1453000" />
       <workItem from="1570713327966" duration="1765000" />
       <workItem from="1570715143686" duration="1440000" />
-      <workItem from="1570716956912" duration="1231000" />
+      <workItem from="1570716956912" duration="1750000" />
+      <workItem from="1570778638798" duration="1484000" />
+      <workItem from="1570793477106" duration="1775000" />
+      <workItem from="1570795325374" duration="1615000" />
+      <workItem from="1570797183743" duration="1755000" />
+      <workItem from="1570798992606" duration="1788000" />
+      <workItem from="1570800813508" duration="1789000" />
+      <workItem from="1570802634388" duration="1784000" />
+      <workItem from="1570804446938" duration="510000" />
     </task>
     <servers />
   </component>
