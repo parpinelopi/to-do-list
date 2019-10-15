@@ -12,7 +12,7 @@ public class Task {
 
 
     private String Project;
-    private static String Title;
+    private String Title;
     private Date DueDate;
     private boolean Status;
 

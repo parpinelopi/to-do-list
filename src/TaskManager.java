@@ -101,6 +101,15 @@ public class TaskManager {
             System.out.println(t.getTitle());
         }
     }
+//Iterator method that removes tasks
+    public void removeTask(){
+        Iterator<Task> task= task.iterator();
+
+        while (iter.hasNext()){
+            System.out.print(iter.next() + "")
+        }
+
+    }
 }
 
 

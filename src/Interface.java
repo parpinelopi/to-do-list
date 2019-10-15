@@ -40,8 +40,8 @@ public class Interface {
                 case "1":
                     System.out.println("Sort by 1. Date or 2. project, 0. exit");
 
-                    //taskManager.sortDisplay(list, menu.nextLine());
-                    taskManager.displayTasks();
+                    taskManager.sortDisplay(list, menu.nextLine());
+                    //taskManager.displayTasks();
                     //method ("show");
                     break;
                 case "2":
@@ -105,44 +105,5 @@ public class Interface {
 
 
 
-    }
-
-    private Task createTask(){
-        Scanner userInput = new Scanner(System.in);
-
-        System.out.println("enter project: ");
-        String project = userInput.nextLine();
-        Scanner titleInput = new Scanner(System.in);
-        System.out.println("enter title: ");
-        String title = titleInput.nextLine();
-        System.out.println(title);
-        System.out.println("enter due date (dd/mm/yyyy) : ");
-        String userDueDateInput;
-        Date validDate = null;
-        DateFormat format = new SimpleDateFormat("dd/MM/yyyy");
-        format.setLenient(false);
-
-        while (true) {
-            Scanner dateInput = new Scanner(System.in);
-            userDueDateInput = dateInput.nextLine();
-
-
-            try {
-                validDate = format.parse(userDueDateInput);
-                System.out.println(userDueDateInput + " date is valid");
-
-                //System.out.println("  Task  " + '\n' + "title : " + title + '\n' + "due date : " + validDate);
-                break;
-
-            } catch (ParseException e) {
-                System.out.println(userDueDateInput + " date is invalid, please enter the date again");
-
-            }
-
-
-        }
-        Date dueDate = validDate;new Task(project, title, dueDate);
-        System.out.println("Task is created");
-        return new Task(project, title, dueDate);
     }
 }

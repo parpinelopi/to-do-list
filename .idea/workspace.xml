@@ -3,13 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="0fe97b1b-7053-4387-a721-7ed91b3371eb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Checklist/AppToDo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Checklist/AppToDo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Checklist/Interface.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Checklist/Interface.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Checklist/Task.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Checklist/Task.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Checklist/TaskManager$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Checklist/TaskManager$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Checklist/TaskManager$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Checklist/TaskManager$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Checklist/TaskManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Checklist/TaskManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppToDo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppToDo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Interface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Task.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TaskManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TaskManager.java" afterDir="false" />
@@ -196,7 +191,11 @@
       <workItem from="1571125256064" duration="1637000" />
       <workItem from="1571127072181" duration="1751000" />
       <workItem from="1571129133529" duration="1708000" />
-      <workItem from="1571130947118" duration="1509000" />
+      <workItem from="1571130947118" duration="1705000" />
+      <workItem from="1571132807040" duration="292000" />
+      <workItem from="1571133715947" duration="1175000" />
+      <workItem from="1571141669688" duration="294000" />
+      <workItem from="1571148962465" duration="1357000" />
     </task>
     <servers />
   </component>
