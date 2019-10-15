@@ -14,23 +14,30 @@ public class AppToDo {
     //   ArrayList<Task> tasks = new ArrayList<Task>();
     //    screen.startScreen (tasks);
 
-    public void taskAdd(ArrayList<Task> tasks) {
+    /**
+     * This method includes user input and validates the date parameter
+     * @param tasks
+     */
+
+    public ArrayList taskAdd(ArrayList<Task> tasks) {
         Scanner userInput = new Scanner(System.in);
 
 
         System.out.println("enter project: ");
         String project = userInput.nextLine();
+        Scanner titleInput = new Scanner(System.in);
         System.out.println("enter title: ");
-        String title = userInput.nextLine();
-        //System.out.println("enter due date: ");
+        String title = titleInput.nextLine();
+        System.out.println(title);
         System.out.println("enter due date (dd/mm/yyyy) : ");
         String userDueDateInput;
         Date validDate = null;
-        DateFormat format = new SimpleDateFormat("dd/mm/yyyy");
+        DateFormat format = new SimpleDateFormat("dd/MM/yyyy");
         format.setLenient(false);
 
         while (true) {
-            userDueDateInput = userInput.nextLine();
+            Scanner dateInput = new Scanner(System.in);
+            userDueDateInput = dateInput.nextLine();
 
 
             try {
@@ -47,12 +54,11 @@ public class AppToDo {
 
 
         }
-
         Date dueDate = validDate;
         Task task = new Task(project, title, dueDate);
         tasks.add(task);
         System.out.println(tasks.size());
-
+            return tasks;
 
 //start application from here
     }

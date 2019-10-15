@@ -1,9 +1,15 @@
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.*;
+
 
 public class TaskManager {
 
+    ArrayList<Task> tasks = new ArrayList<Task>();
+
     Task task = new Task();
-    Interface startscreen;
+    Interface start = new Interface();
 
 
     public static void sortDisplay(ArrayList<Task> list, String sortBy) {
@@ -40,9 +46,11 @@ public class TaskManager {
         System.out.println("Insert title of task to edit");
         Scanner edit = new Scanner(System.in);
         String taskTitle = edit.nextLine();
+        Task currentTask=new Task();
         int i = 0;
         for (Task task : list) {
             if (task.getTitle().equals(taskTitle)) {
+                currentTask=task;
                 break;
             }
             i++;
@@ -57,24 +65,42 @@ public class TaskManager {
 
         switch (taskOption) { //enter attributes for the methods
             case "0":
-                startscreen.startScreen();
+                start.startScreen(list);
             case "1":
-                task.changeProject();
+                System.out.println("Rename the project");
+                String f=edit.nextLine();
+                currentTask.changeProject(f);
                 break;
             case "2":
-                task.changeDueDate();
+                System.out.println("Change due date");
+                //Date=edit.nextLine();
+               // currentTask.changeDueDate(Date);
                 break;
             case "3":
-                task.changeTitle();
+                System.out.println("Change the title");
+                String newTitle=edit.nextLine();
+                currentTask.changeTitle(newTitle);
                 break;
             case "4":
-                task.taskDone();
-
-
+                currentTask.taskDone();
+                break;
+            default:
+                System.out.println("If you pressed wrong input, return with 0");
         }
     }
 
+    public void taskAdd(Task t) {
+        tasks.add(t);
 
+//start application from here
+    }
+
+    public void displayTasks() {
+        for (Task t :
+             tasks) {
+            System.out.println(t.getTitle());
+        }
+    }
 }
 
 

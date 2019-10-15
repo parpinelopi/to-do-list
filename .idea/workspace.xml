@@ -2,15 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0fe97b1b-7053-4387-a721-7ed91b3371eb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Interface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Checklist/AppToDo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Checklist/AppToDo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Checklist/Interface.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Checklist/Interface.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Checklist/Task.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Checklist/Task.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Checklist/TaskManager$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Checklist/TaskManager$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Checklist/TaskManager$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Checklist/TaskManager$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Checklist/TaskManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Checklist/TaskManager.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AppToDo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppToDo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Task.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TaskManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TaskManager.java" afterDir="false" />
     </list>
@@ -182,7 +182,21 @@
       <workItem from="1570798992606" duration="1788000" />
       <workItem from="1570800813508" duration="1789000" />
       <workItem from="1570802634388" duration="1784000" />
-      <workItem from="1570804446938" duration="510000" />
+      <workItem from="1570804446938" duration="634000" />
+      <workItem from="1571041318339" duration="17000" />
+      <workItem from="1571051808814" duration="1186000" />
+      <workItem from="1571053546996" duration="1760000" />
+      <workItem from="1571055359905" duration="1498000" />
+      <workItem from="1571057170002" duration="1665000" />
+      <workItem from="1571058986198" duration="1768000" />
+      <workItem from="1571060800315" duration="1772000" />
+      <workItem from="1571062612172" duration="1171000" />
+      <workItem from="1571121604196" duration="1786000" />
+      <workItem from="1571123411662" duration="1790000" />
+      <workItem from="1571125256064" duration="1637000" />
+      <workItem from="1571127072181" duration="1751000" />
+      <workItem from="1571129133529" duration="1708000" />
+      <workItem from="1571130947118" duration="1509000" />
     </task>
     <servers />
   </component>

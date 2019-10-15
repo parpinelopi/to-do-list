@@ -1,9 +1,5 @@
-//package collection;//
 
-import java.text.DateFormat;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
+import java.util.*;
 import java.util.Date;
 import java.lang.String;
 import java.util.Scanner;
@@ -40,6 +36,10 @@ public class Task {
     public String getProject(){
         return Project;}
 
+    /**
+     *
+     * @param title
+     */
     public void setTitle(String title){
         this.Title = title;
     }
@@ -57,7 +57,9 @@ public class Task {
     }
 
 
-    //edit methods
+    /**
+     *
+     */
     public void taskDone (){
         Status=true;
     }
