@@ -52,7 +52,7 @@ public class Task {
         return DueDate;
     }
 
-    public boolean status (){
+    public boolean getStatus (){
         return Status;
     }
 

@@ -37,7 +37,7 @@ public class TaskManager {
         }
 
         for (Task task : list) {
-            System.out.println("Project :" + task.getProject() + "Title :" + task.getTitle() + "Due date :" + task.getDueDate());
+            System.out.println("Project :  " + task.getProject() + "Title :  " + task.getTitle() + "Due date :  " + task.getDueDate() + "Status :  " + task.getStatus());
         }
 
     }
