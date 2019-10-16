@@ -60,6 +60,7 @@ public class TaskManager {
         System.out.println("2.Change the due date");
         System.out.println("3.Change the title");
         System.out.println("4.Mark task as done");
+        System.out.println("5.Remove task");
         System.out.println("0. Return to previous");
         String taskOption = edit.nextLine();
 
@@ -85,8 +86,10 @@ public class TaskManager {
                 currentTask.taskDone();
                 break;
             case "5":
-                System.out.println("Remove task");
-                //
+                System.out.println("Enter title of the task to be removed");
+                String taskToRemove =edit.nextLine();
+                removeTask();
+
             default:
                 System.out.println("If you pressed wrong input, return with 0");
         }
@@ -106,13 +109,10 @@ public class TaskManager {
     }
 //Iterator method that removes tasks
     public void removeTask(){
-
-        Scanner remove = new Scanner(System.in);
-        System.out.println( "Enter task to be removed");
-        String taskToRemove =remove.nextLine();
         for(Iterator<Task> iterator =tasks.iterator(); iterator.hasNext();){
             Task task = iterator.next();
-           if(task.getTitle() == taskToRemove){
+            String taskToRemove = new String();
+            if(task.getTitle() == taskToRemove){
                iterator.remove();
 
                //create a removeTask that will be given by user input
