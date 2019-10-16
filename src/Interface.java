@@ -15,7 +15,9 @@ public class Interface {
         Task task = new Task();
         Interface start= new Interface();
         //TaskManager option = new TaskManager();
-
+        list.add(
+                new Task ("taskremove", "remove", new Date() )
+        );
 
         String menuInput;
 

@@ -11,7 +11,9 @@ public class TaskManager {
     Task task = new Task();
     Interface start = new Interface();
 
+    public TaskManager() {
 
+    }
     public static void sortDisplay(ArrayList<Task> list, String sortBy) {
 
         if (sortBy.equals("1")) {
@@ -37,7 +39,7 @@ public class TaskManager {
         }
 
         for (Task task : list) {
-            System.out.println("Project :  " + task.getProject() + "Title :  " + task.getTitle() + "Due date :  " + task.getDueDate() + "Status :  " + task.getStatus());
+            System.out.println("Project :  " + task.getProject() + "  Title :" + task.getTitle() + "  Due date:  " + task.getDueDate() + "  Status :  " + (task.getStatus() ? "Done" : "Not done"));
         }
 
     }
@@ -87,9 +89,8 @@ public class TaskManager {
                 break;
             case "5":
                 System.out.println("Enter title of the task to be removed");
-                String taskToRemove =edit.nextLine();
-                removeTask();
-
+                String taskToRemove = edit.nextLine();
+                removeTask(taskToRemove, list);
             default:
                 System.out.println("If you pressed wrong input, return with 0");
         }
@@ -107,22 +108,30 @@ public class TaskManager {
             System.out.println(t.getTitle());
         }
     }
-//Iterator method that removes tasks
-    public void removeTask(){
-        for(Iterator<Task> iterator =tasks.iterator(); iterator.hasNext();){
+
+    /**
+     *
+     * @param remTask the user input that the
+     * @param list array list that stores the
+     */
+    public void removeTask(String remTask, ArrayList<Task> list){
+        String taskToRemove = remTask;
+        Iterator<Task> iterator = list.iterator();
+        while (iterator.hasNext()){
             Task task = iterator.next();
-            String taskToRemove = new String();
-            if(task.getTitle() == taskToRemove){
+            if(task.getTitle().equals(taskToRemove)){
                iterator.remove();
 
                //create a removeTask that will be given by user input
-               //for(iter.hasNext()){
-               // System.out.print(iter.next() + "")
             }
 
 
         }
 
+    }
+
+    public ArrayList<Task> getList (){
+        return tasks;
     }
 }
 

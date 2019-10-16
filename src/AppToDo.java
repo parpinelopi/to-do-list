@@ -56,6 +56,7 @@ public class AppToDo {
         }
         Date dueDate = validDate;
         Task task = new Task(project, title, dueDate);
+
         tasks.add(task);
         System.out.println(tasks.size());
             return tasks;
