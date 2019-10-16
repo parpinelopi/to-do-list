@@ -129,6 +129,9 @@ public class TaskManager {
         }
 
     }
+    public showTasks(){
+        
+    }
 
     public ArrayList<Task> getList (){
         return tasks;
