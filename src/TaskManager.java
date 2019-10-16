@@ -84,6 +84,9 @@ public class TaskManager {
             case "4":
                 currentTask.taskDone();
                 break;
+            case "5":
+                System.out.println("Remove task");
+                //
             default:
                 System.out.println("If you pressed wrong input, return with 0");
         }
@@ -103,10 +106,21 @@ public class TaskManager {
     }
 //Iterator method that removes tasks
     public void removeTask(){
-        Iterator<Task> task= task.iterator();
 
-        while (iter.hasNext()){
-            System.out.print(iter.next() + "")
+        Scanner remove = new Scanner(System.in);
+        System.out.println( "Enter task to be removed");
+        String taskToRemove =remove.nextLine();
+        for(Iterator<Task> iterator =tasks.iterator(); iterator.hasNext();){
+            Task task = iterator.next();
+           if(task.getTitle() == taskToRemove){
+               iterator.remove();
+
+               //create a removeTask that will be given by user input
+               //for(iter.hasNext()){
+               // System.out.print(iter.next() + "")
+            }
+
+
         }
 
     }
