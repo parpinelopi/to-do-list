@@ -26,13 +26,13 @@ public class Interface {
         while (true) {
 
             System.out.println(" Welcome to toDoLY");
-            //("You can have X (method that will sort the tasks to do and) and Y tasks are done. " Should be displayed.
-
+            System.out.println("You have " + /*taskTodo+*/ " and " + /*taskDone*/ "+  tasks are done"); ///variables are instantiated in TaskManager countTasks method
             System.out.println(" Menu ");
             System.out.println("1. Show task list");
             System.out.println("2. Add new task ");
             System.out.println("3. Edit task");
-            System.out.println("4. Save and quit");
+            System.out.println("4. Clear task list"); //create method for clearing the task list
+            System.out.println("5. Save and quit");
             System.out.println("Enter your choice from the menu");
 
             menuInput = menu.nextLine();
@@ -52,9 +52,12 @@ public class Interface {
                     break;
                 case "3":
                     taskManager.editOption(list);
-                    //("edit option method");
                     break;
                 case "4":
+                    list.removeAll(list);
+                    //clear list method perhaps from generics
+                    break;
+                case "5":
                     //("Save and quit");
                     //quit
                     menu.close();

@@ -27,6 +27,7 @@ public class TaskManager {
                 }
             });
         }
+
         if (sortBy.equals("2")) {
 
             Collections.sort(list, new Comparator<Task>() {
@@ -39,7 +40,7 @@ public class TaskManager {
         }
 
         for (Task task : list) {
-            System.out.println("Project :  " + task.getProject() + "  Title :" + task.getTitle() + "  Due date:  " + task.getDueDate() + "  Status :  " + (task.getStatus() ? "Done" : "Not done"));
+            System.out.println("Project :" + task.getProject() + "  Title :" + task.getTitle() + "  Due date:" + task.getDueDate() + "  Status :" + (task.getStatus() ? "Done" : "Not done"));
         }
 
     }
@@ -57,6 +58,7 @@ public class TaskManager {
             }
             i++;
         }
+
         System.out.println("Choose option to edit task");
         System.out.println("1.Change Project name");
         System.out.println("2.Change the due date");
@@ -124,14 +126,37 @@ public class TaskManager {
 
                //create a removeTask that will be given by user input
             }
+        }
+    }
+
+    //method that will count the done and undone tasks
+    /*public void countTasks(){
+        int taskDone;
+        int taskTodo;
+
+        for (tasks:list) {
+            int taskDone = 0;
+            int taskTodo = 0;
+            if (task.getStatus() == false) {
+
+                taskTodo++;
 
 
+            } else {
+                taskDone++;
+            }
         }
 
-    }
-    public showTasks(){
-        
-    }
+
+        //case 1
+        //loop through the array list
+        //have two variables and count each of done and undone
+
+        //case 2
+        //perhaps use the method for counting according to status
+        //case 3 user streams?
+
+    }*/
 
     public ArrayList<Task> getList (){
         return tasks;

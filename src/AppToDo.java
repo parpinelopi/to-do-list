@@ -43,8 +43,6 @@ public class AppToDo {
             try {
                 validDate = format.parse(userDueDateInput);
                 System.out.println(userDueDateInput + " date is valid");
-
-                //System.out.println("  Task  " + '\n' + "title : " + title + '\n' + "due date : " + validDate);
                 break;
 
             } catch (ParseException e) {
@@ -60,8 +58,6 @@ public class AppToDo {
         tasks.add(task);
         System.out.println(tasks.size());
             return tasks;
-
-//start application from here
     }
 
 }
