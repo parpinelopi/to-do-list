@@ -1,3 +1,4 @@
+import java.io.IOException;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -8,8 +9,8 @@ import java.util.Scanner;
 
 public class Interface {
 
-    public void startScreen(ArrayList<Task> list) {
-
+    public void startScreen(ArrayList<Task> list) throws IOException {
+        SaveFile saveFile = new SaveFile();
         TaskManager taskManager = new TaskManager();
         AppToDo appToDo = new AppToDo();
         Task task = new Task();
@@ -26,14 +27,19 @@ public class Interface {
         while (true) {
 
             System.out.println(" Welcome to toDoLY");
+            System.out.println("\n");
             System.out.println("You have " + /*taskTodo+*/ " and " + /*taskDone*/ "+  tasks are done"); ///variables are instantiated in TaskManager countTasks method
+            System.out.println("\n");
+            System.out.println("Enter your choice from the menu");
+            System.out.println("\n");
             System.out.println(" Menu ");
             System.out.println("1. Show task list");
             System.out.println("2. Add new task ");
             System.out.println("3. Edit task");
             System.out.println("4. Clear task list"); //create method for clearing the task list
-            System.out.println("5. Save and quit");
-            System.out.println("Enter your choice from the menu");
+            System.out.println("5. Save to file");
+            System.out.println("6. Quit application");
+
 
             menuInput = menu.nextLine();
 
@@ -58,10 +64,12 @@ public class Interface {
                     //clear list method perhaps from generics
                     break;
                 case "5":
-                    //("Save and quit");
-                    //quit
-                    menu.close();
+                    //("Save");
+                    saveFile.arrayToOutput();
                     break;
+                case"6":
+                    System.out.println("Thank you for using ToDoLy");
+                    menu.close();
                 default:
                     System.out.println("You have entered invalid choice. Please try again");
 

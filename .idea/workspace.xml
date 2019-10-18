@@ -2,9 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0fe97b1b-7053-4387-a721-7ed91b3371eb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/SaveFile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Checklist/AppToDo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Checklist/AppToDo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Checklist/Interface.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Checklist/Interface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Checklist/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Checklist/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Checklist/SaveExit.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Checklist/Task.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Checklist/Task.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Checklist/TaskManager$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Checklist/TaskManager$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Checklist/TaskManager$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Checklist/TaskManager$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Checklist/TaskManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Checklist/TaskManager.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AppToDo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppToDo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Interface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SaveExit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Task.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TaskManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TaskManager.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />

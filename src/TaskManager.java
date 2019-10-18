@@ -1,3 +1,4 @@
+import java.io.IOException;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -10,6 +11,7 @@ public class TaskManager {
 
     Task task = new Task();
     Interface start = new Interface();
+    AppToDo appToDo = new AppToDo();
 
     public TaskManager() {
 
@@ -41,11 +43,11 @@ public class TaskManager {
 
         for (Task task : list) {
             System.out.println("Project :" + task.getProject() + "  Title :" + task.getTitle() + "  Due date:" + task.getDueDate() + "  Status :" + (task.getStatus() ? "Done" : "Not done"));
-        }
+         }
 
     }
 
-    public void editOption(ArrayList<Task> list) {
+    public void editOption(ArrayList<Task> list) throws IOException {
         System.out.println("Insert title of task to edit");
         Scanner edit = new Scanner(System.in);
         String taskTitle = edit.nextLine();
@@ -78,8 +80,7 @@ public class TaskManager {
                 break;
             case "2":
                 System.out.println("Change due date");
-                //Date=edit.nextLine();
-               // currentTask.changeDueDate(Date);
+               currentTask.changeDueDate(appToDo.insertDate());
                 break;
             case "3":
                 System.out.println("Change the title");
@@ -146,7 +147,6 @@ public class TaskManager {
                 taskDone++;
             }
         }
-
 
         //case 1
         //loop through the array list

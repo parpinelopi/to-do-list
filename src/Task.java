@@ -19,7 +19,7 @@ public class Task {
     //add main method
 
     public Task(String project, String title, Date dueDate) {
-        Project = project; //if else statement to check if project exists
+        Project = project;
         Title = title;
         DueDate = dueDate;
         Status = false;
@@ -68,14 +68,17 @@ public class Task {
     }
 
     public void changeDueDate(Date newDueDate){
-        DueDate=newDueDate;
+        DueDate = newDueDate;
     }
 
     public void changeProject(String project){
         Project=project;
     }
 
-
+    @Override
+    public String toString(){
+        return (Project+" "+Title+" "+DueDate+" "+Status);
+    }
 }
 
 

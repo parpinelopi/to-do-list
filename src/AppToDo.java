@@ -30,6 +30,17 @@ public class AppToDo {
         String title = titleInput.nextLine();
         System.out.println(title);
         System.out.println("enter due date (dd/mm/yyyy) : ");
+
+        Date dueDate = insertDate();
+
+        Task task = new Task(project, title, dueDate);
+
+        tasks.add(task);
+        System.out.println(tasks.size());
+            return tasks;
+    }
+
+    public Date insertDate() {
         String userDueDateInput;
         Date validDate = null;
         DateFormat format = new SimpleDateFormat("dd/MM/yyyy");
@@ -49,15 +60,9 @@ public class AppToDo {
                 System.out.println(userDueDateInput + " date is invalid, please enter the date again");
 
             }
-
-
         }
+
         Date dueDate = validDate;
-        Task task = new Task(project, title, dueDate);
-
-        tasks.add(task);
-        System.out.println(tasks.size());
-            return tasks;
+        return dueDate;
     }
-
 }
