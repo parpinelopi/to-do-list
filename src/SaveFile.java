@@ -1,12 +1,14 @@
 import java.io.*;
 
 public class SaveFile {
-    //Task task= new Task();
-    String TASKS_OUTPUT = "/Users/pinelopiparaskevopoulou/Desktop/Checklist/FILE_OUTPUT.TXT";
-    //ArrayList<Task> list = new ArrayList<>();
-    //String tasksToFile = String.join(",", project, title, dueDate, status);
 
-        public void read() {
+
+        //Task task= new Task();
+        //String TASKS_OUTPUT = "/Users/pinelopiparaskevopoulou/Desktop/Checklist/fileOut.txt";
+        //ArrayList<Task> list = new ArrayList<>();
+        //String tasksToFile = String.join(",", project, title, dueDate, status);
+
+       /* public void read () {
 
             try {
                 File input = new File("TASKS_OUTPUT");
@@ -20,24 +22,21 @@ public class SaveFile {
             } catch (IOException e) {
                 e.printStackTrace();
             }
+        } */
+
+        public void write () {
+            try {
+                BufferedWriter output = new BufferedWriter(new FileWriter("/Users/pinelopiparaskevopoulou/Desktop/Checklist/fileOut.txt"));
+                String str = "Write this string to my file";
+                //FileWriter fw = new FileWriter(output);
+                output.write(str);
+                output.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
 
-        public void write(){
-        try
-        {
-            File output = new File(TASKS_OUTPUT);
-            String str="Write this string to my file";
-            FileWriter fw = new FileWriter(output) ;
-            fw.write(str);
-            fw.close();
-           // output.close();
-        }
-        catch (IOException  e)
-        { e.printStackTrace();
-        }
-    }
 }
-
 
 
 
