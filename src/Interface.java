@@ -1,16 +1,14 @@
 import java.io.IOException;
-import java.text.DateFormat;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.Scanner;
 
 
+
 public class Interface {
 
     public void startScreen(ArrayList<Task> list) throws IOException {
-        SaveFile saveFile = new SaveFile();
+        SaveFile saveRead = new SaveFile();
         TaskManager taskManager = new TaskManager();
         AppToDo appToDo = new AppToDo();
         Task task = new Task();
@@ -26,8 +24,8 @@ public class Interface {
 
         while (true) {
 
-            System.out.println(" Welcome to toDoLY");
-            System.out.println("\n");
+            System.out.println("Welcome to toDoLY");
+
             System.out.println("You have " + /*taskTodo+*/ " and " + /*taskDone*/ "+  tasks are done"); ///variables are instantiated in TaskManager countTasks method
             System.out.println("\n");
             System.out.println("Enter your choice from the menu");
@@ -65,7 +63,7 @@ public class Interface {
                     break;
                 case "5":
                     //("Save");
-                    saveFile.arrayToOutput();
+                    saveRead.write();
                     break;
                 case"6":
                     System.out.println("Thank you for using ToDoLy");
@@ -74,45 +72,7 @@ public class Interface {
                     System.out.println("You have entered invalid choice. Please try again");
 
             }
-                //Should this be here or in the TaskManager Class?
-            /*public void editOption(ArrayList<Task> list) {
-                System.out.println("Insert title of task to edit");
-                Scanner edit = new Scanner(System.in);
-                String taskTitle = edit.nextLine();
-                int i = 0;
-                for (Task task : list) {
-                    if (task.getTitle().equals(taskTitle)) {
-                        break;
-                    }
-                    i++;
-                }
-                System.out.println("Choose option to edit task");
-                System.out.println("1.Change Project name");
-                System.out.println("2.Change the due date");
-                System.out.println("3.Change the title");
-                System.out.println("4.Mark task as done");
-                System.out.println("0. Return to previous");
-                String taskOption = edit.nextLine();
 
-                switch (taskOption) { //enter attributes for the methods
-                    case "0":
-                        start.startScreen(ArrayList<Task> list);
-                    case "1":
-                        task.changeProject();
-                        break;
-                    case "2":
-                        task.changeDueDate();
-                        break;
-                    case "3":
-                        task.changeTitle();
-                        break;
-                    case "4":
-                        task.taskDone();
-                        break;
-                    default:
-                        System.out.println("If you pressed wrong input, return with 0");
-                }
-            }*/
         }
 
 

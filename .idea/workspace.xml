@@ -2,22 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0fe97b1b-7053-4387-a721-7ed91b3371eb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/SaveFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Checklist/AppToDo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Checklist/AppToDo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSV_OUTPUT.CSV" beforeDir="false" afterPath="$PROJECT_DIR$/CSV_OUTPUT.CSV" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Checklist/Interface.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Checklist/Interface.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Checklist/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Checklist/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Checklist/SaveExit.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Checklist/SaveFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Checklist/SaveFile.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Checklist/Task.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Checklist/Task.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Checklist/TaskManager$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Checklist/TaskManager$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Checklist/TaskManager$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Checklist/TaskManager$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Checklist/TaskManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Checklist/TaskManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppToDo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppToDo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Interface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SaveExit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SaveFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SaveFile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Task.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TaskManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TaskManager.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -62,7 +56,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.SaveFile">
     <configuration name="AppToDo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="AppToDo" />
       <module name="Checklist" />
@@ -90,6 +84,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SaveFile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SaveFile" />
+      <module name="Checklist" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Task" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Task" />
       <module name="Checklist" />
@@ -97,20 +98,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="taskTitleDate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="taskTitleDate" />
-      <module name="Checklist" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SaveFile" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.AppToDo" />
         <item itemvalue="Application.Task" />
         <item itemvalue="Application.Project" />
-        <item itemvalue="Application.taskTitleDate" />
       </list>
     </recent_temporary>
   </component>
@@ -234,5 +228,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/SaveFile.java</url>
+          <line>172</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

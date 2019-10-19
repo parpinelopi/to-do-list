@@ -8,9 +8,6 @@ import java.util.Scanner;
 
 public class Task {
 
-
-
-
     private String Project;
     private String Title;
     private Date DueDate;
