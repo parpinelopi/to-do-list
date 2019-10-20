@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class Interface {
 
     public void startScreen(ArrayList<Task> list) throws IOException {
-        SaveFile saveRead = new SaveFile();
+        SaveFile saveFile = new SaveFile();
         TaskManager taskManager = new TaskManager();
         AppToDo appToDo = new AppToDo();
         Task task = new Task();
@@ -63,7 +63,7 @@ public class Interface {
                     break;
                 case "5":
                     //("Save");
-                    saveRead.write();
+                    saveFile.write();
                     break;
                 case"6":
                     System.out.println("Thank you for using ToDoLy");
