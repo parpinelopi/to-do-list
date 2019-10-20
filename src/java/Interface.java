@@ -1,3 +1,5 @@
+package java;
+
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Date;
@@ -13,9 +15,9 @@ public class Interface {
         AppToDo appToDo = new AppToDo();
         Task task = new Task();
         Interface start= new Interface();
-        //TaskManager option = new TaskManager();
+        //java.TaskManager option = new java.TaskManager();
         list.add(
-                new Task ("taskremove", "remove", new Date() )
+                new Task("taskremove", "remove", new Date() )
         );
 
         String menuInput;
@@ -26,7 +28,7 @@ public class Interface {
 
             System.out.println("Welcome to toDoLY");
 
-            System.out.println("You have " + /*taskTodo+*/ " and " + /*taskDone*/ "+  tasks are done"); ///variables are instantiated in TaskManager countTasks method
+            System.out.println("You have " + /*taskTodo+*/ " and " + /*taskDone*/ "+  tasks are done"); ///variables are instantiated in java.TaskManager countTasks method
             System.out.println("\n");
             System.out.println("Enter your choice from the menu");
             System.out.println("\n");
@@ -63,7 +65,8 @@ public class Interface {
                     break;
                 case "5":
                     //("Save");
-                    saveFile.write();
+                    saveFile.arrayToOutput(list);
+                    //saveFile.write();
                     break;
                 case"6":
                     System.out.println("Thank you for using ToDoLy");
