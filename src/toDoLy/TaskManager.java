@@ -1,11 +1,14 @@
-package java;
+package toDoLy;
 
-import java.AppToDo;
-import java.Interface;
-import java.Task;
 import java.io.IOException;
 import java.util.*;
 
+/**
+ * The class TaskManager contains most of the methods that are connected to the editing
+ * option of the main menu, such as sort and display tasks according to due date or project,
+ * change project name, title, due date, as well as the status. Additionally the delete task
+ * method.
+ */
 
 public class TaskManager {
 
@@ -15,7 +18,13 @@ public class TaskManager {
     Interface start = new Interface();
     AppToDo appToDo = new AppToDo();
 
-    public TaskManager() {
+    /**
+     * The method is sorting the task according to date or project with numerical options
+     * using the Comparator class.
+     * class.
+     */
+
+    public TaskManager() { //wrote it with capital letter
 
     }
     public static void sortDisplay(ArrayList<Task> list, String sortBy) {
@@ -48,6 +57,16 @@ public class TaskManager {
          }
 
     }
+
+    /**
+     * The method editOption includes all of the editing options for the task by giving
+     * the task title. All of the fields can be edited, project, title, due date, status
+     * as well as removes the task completely. Switch statements are also used for this
+     * purpose
+     *
+     * @param list
+     * @throws IOException
+     */
 
     public void editOption(ArrayList<Task> list) throws IOException {
         System.out.println("Insert title of task to edit");
@@ -101,12 +120,17 @@ public class TaskManager {
         }
     }
 
+    /**
+     * The method taskAdd adds a new task to the array list
+     * @param t task added
+     */
     public void taskAdd(Task t) {
         tasks.add(t);
-
-//start application from here
     }
 
+    /**
+     * The method displayTasks displays the tasks from the option
+     */
     public void displayTasks() {
         for (Task t :
              tasks) {
@@ -115,8 +139,10 @@ public class TaskManager {
     }
 
     /**
-     *
-     * @param remTask the user input that the
+     *The method removeTask stores the chosen to remove task in a string and uses the
+     * Iterator interface to iterate through the ArrayList and uses .equals to find
+     * the title that was given to be removed and removes it.
+     * @param remTask stores the chosen according to title task to be removed
      * @param list array list that stores the
      */
     public void removeTask(String remTask, ArrayList<Task> list){
@@ -126,8 +152,6 @@ public class TaskManager {
             Task task = iterator.next();
             if(task.getTitle().equals(taskToRemove)){
                iterator.remove();
-
-               //create a removeTask that will be given by user input
             }
         }
     }
@@ -160,6 +184,10 @@ public class TaskManager {
 
     }*/
 
+    /**
+     * The method getList fetches the created ArrayList
+     * @return returns the tasks of the list.
+     */
     public ArrayList<Task> getList (){
         return tasks;
     }

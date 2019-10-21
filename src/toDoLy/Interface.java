@@ -1,10 +1,14 @@
-package java;
+package toDoLy;
 
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.Scanner;
 
+/**
+ * Class Interface contains mostly the interface of the application, print methods and switch cases
+ * for the option of the main menu.
+ */
 
 
 public class Interface {
@@ -15,10 +19,9 @@ public class Interface {
         AppToDo appToDo = new AppToDo();
         Task task = new Task();
         Interface start= new Interface();
-        //java.TaskManager option = new java.TaskManager();
-        list.add(
-                new Task("taskremove", "remove", new Date() )
-        );
+        //list.add(
+               // new Task("taskremove", "remove", new Date() )
+        //);
 
         String menuInput;
 
@@ -28,7 +31,7 @@ public class Interface {
 
             System.out.println("Welcome to toDoLY");
 
-            System.out.println("You have " + /*taskTodo+*/ " and " + /*taskDone*/ "+  tasks are done"); ///variables are instantiated in java.TaskManager countTasks method
+            System.out.println("You have " + /*taskTodo+*/ " and " + /*taskDone*/ "+  tasks are done" ); ///variables are instantiated in java.TaskManager countTasks method
             System.out.println("\n");
             System.out.println("Enter your choice from the menu");
             System.out.println("\n");
@@ -36,13 +39,18 @@ public class Interface {
             System.out.println("1. Show task list");
             System.out.println("2. Add new task ");
             System.out.println("3. Edit task");
-            System.out.println("4. Clear task list"); //create method for clearing the task list
+            System.out.println("4. Clear task list");
             System.out.println("5. Save to file");
             System.out.println("6. Quit application");
 
 
             menuInput = menu.nextLine();
 
+
+            /**
+             * switch statement menuInput represents the options of the main menu that are
+             * executed with numerical input from the user that are assigned to every option.
+             */
             // switch cases written according to options in the menu, 1..2..3 etc. Should I use switch in a switch for the further options in the menu?
             switch (menuInput) {
                 case "1":
@@ -75,11 +83,6 @@ public class Interface {
                     System.out.println("You have entered invalid choice. Please try again");
 
             }
-
         }
-
-
-
-
     }
 }

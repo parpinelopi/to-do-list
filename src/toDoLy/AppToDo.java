@@ -1,4 +1,4 @@
-package java;
+package toDoLy;
 
 import java.text.DateFormat;
 import java.text.ParseException;
@@ -8,16 +8,11 @@ import java.util.*;
 
 public class AppToDo {
 
-    //public static void main(String[] args) {
-
-    //    java.Interface screen = new java.Interface();
-
-    //   ArrayList<java.Task> tasks = new ArrayList<java.Task>();
-    //    screen.startScreen (tasks);
-
     /**
-     * This method includes user input and validates the date parameter
-     * @param tasks
+     * This method includes user input upon creation of the task, entering project,
+     * title, due date and task status.
+     * @param tasks is the task that is created containing the fields mentioned above
+     * entered by the user.
      */
 
     public ArrayList taskAdd(ArrayList<Task> tasks) {
@@ -41,6 +36,11 @@ public class AppToDo {
             return tasks;
     }
 
+    /**
+     * This method handles the due date input from the user and iterates until the valid date
+     * type is given. Printing also messages to notify of invalid or valid input.
+     * @return the valid due date after validating user's due date input from the user and when repeating it.
+     */
     public Date insertDate() {
         String userDueDateInput;
         Date validDate = null;

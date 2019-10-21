@@ -2,18 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0fe97b1b-7053-4387-a721-7ed91b3371eb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/SaveFileTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSV_OUTPUT.CSV" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Checklist.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Checklist.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Checklist/Interface.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Checklist/Interface.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Checklist/SaveFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Checklist/SaveFile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppToDo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/AppToDo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/Interface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SaveFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/SaveFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/Task.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TaskManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/TaskManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSV_OUTPUT.CSV" beforeDir="false" afterPath="$PROJECT_DIR$/CSV_OUTPUT.CSV" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Checklist/java/AppToDo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Checklist/java/Interface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Checklist/java/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Checklist/java/SaveFile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Checklist/java/Task.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Checklist/java/TaskManager$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Checklist/java/TaskManager$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Checklist/java/TaskManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Checklist/test/SaveFileTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Checklist/test/SaveFileTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/AppToDo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/toDoLy/AppToDo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/Interface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/toDoLy/Interface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/toDoLy/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/SaveFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/toDoLy/SaveFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/toDoLy/Task.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/TaskManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/toDoLy/TaskManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/SaveFileTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/SaveFileTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -62,10 +68,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="AppToDo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="java.AppToDo" />
+  <component name="RunManager" selected="Application.Main (1)">
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="toDoLy.Main" />
       <module name="Checklist" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="toDoLy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -84,9 +96,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Task" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="java.Task" />
+    <configuration name="SaveFileTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Checklist" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.SaveFileTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -96,11 +116,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (1)" />
+        <item itemvalue="JUnit.SaveFileTest" />
         <item itemvalue="Application.Main" />
         <item itemvalue="ROS Launch.SaveFileTest" />
         <item itemvalue="Application.SaveFile" />
-        <item itemvalue="Application.AppToDo" />
-        <item itemvalue="Application.Task" />
       </list>
     </recent_temporary>
   </component>
@@ -224,21 +244,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/java/SaveFile.java</url>
-          <line>105</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/java/SaveFile.java</url>
-          <line>51</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
