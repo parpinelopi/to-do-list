@@ -100,7 +100,23 @@ public class SaveFile {
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
-        fileContent.stream().forEach(System.out::println);
+
+///might work
+        BufferedReader  br = null;
+        try {
+            br = new BufferedReader(new FileReader("CSV_OUTPUT.CSV"));
+            String line;
+            while((line = br.readLine()) != null) {
+                System.out.println(line);
+                //list.add(User.parse(line));
+            }
+        } catch(IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (br != null) { br.close(); }
+        }
+
+        //fileContent.stream().forEach(System.out::println);
 
     }
 }

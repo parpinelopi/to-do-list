@@ -2,22 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0fe97b1b-7053-4387-a721-7ed91b3371eb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/DateInputTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CSV_OUTPUT.CSV" beforeDir="false" afterPath="$PROJECT_DIR$/CSV_OUTPUT.CSV" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Checklist/toDoLy/AppToDo.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Checklist/toDoLy/Interface.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Checklist/toDoLy/Interface.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Checklist/toDoLy/SaveFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Checklist/toDoLy/SaveFile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Checklist/toDoLy/Task.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Checklist/toDoLy/Task.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Checklist/toDoLy/TaskManager$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Checklist/toDoLy/TaskManager$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Checklist/toDoLy/TaskManager$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Checklist/toDoLy/TaskManager$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Checklist/toDoLy/TaskManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Checklist/toDoLy/TaskManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/SaveFileTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/SaveFileTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/toDoLy/AppToDo.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/toDoLy/Interface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/toDoLy/Interface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/toDoLy/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/toDoLy/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/toDoLy/SaveFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/toDoLy/SaveFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/toDoLy/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/toDoLy/Task.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/toDoLy/TaskManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/toDoLy/TaskManager.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />

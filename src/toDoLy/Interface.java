@@ -29,7 +29,7 @@ public class Interface {
 
             System.out.println("\n");
             System.out.println("Welcome to toDoLY");
-            taskManager.countStatus();
+            taskManager.countStatus(list);
             System.out.println("Enter your choice from the menu");
             System.out.println("\n");
             System.out.println(" Menu ");

@@ -15,7 +15,7 @@ public class TaskManager {
     //private
     private ArrayList<Task> tasks = new ArrayList<Task>();
     private ArrayList<Task> list = new ArrayList<>();
-
+    private  List<List<String>> fileContent = new ArrayList<List<String>>();
     private Task task = new Task();
     private Interface start = new Interface();
 
@@ -177,11 +177,10 @@ public class TaskManager {
      */
 
 
-    public void countStatus() {
-        int done;
+    public void countStatus(ArrayList<Task> list) {
         int undone;
 
-        done = (int) list.stream().filter(Task::getStatus).count();
+        int done = (int) list.stream().filter(Task::getStatus).count();
         undone = list.size() - done;
         System.out.println("You have " + undone + " undone and " + done + " done tasks");
     }
