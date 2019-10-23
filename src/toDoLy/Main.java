@@ -10,9 +10,10 @@ public class Main {
     public static void main(String[] args) throws IOException {
         Interface screen = new Interface();
 
-        ArrayList<Task> tasks = new ArrayList<Task>();
+        ArrayList<Task> tasks = new ArrayList<Task>(); //probably need to be removed
         screen.startScreen (tasks);
 
     }
+
 
 }

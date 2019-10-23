@@ -12,11 +12,13 @@ import java.util.*;
 
 public class TaskManager {
 
-    ArrayList<Task> tasks = new ArrayList<Task>();
+    //private
+    private ArrayList<Task> tasks = new ArrayList<Task>();
+    private ArrayList<Task> list = new ArrayList<>();
 
-    Task task = new Task();
-    Interface start = new Interface();
-    AppToDo appToDo = new AppToDo();
+    private Task task = new Task();
+    private Interface start = new Interface();
+
 
     /**
      * The method is sorting the task according to date or project with numerical options
@@ -27,6 +29,7 @@ public class TaskManager {
     public TaskManager() { //wrote it with capital letter
 
     }
+
     public static void sortDisplay(ArrayList<Task> list, String sortBy) {
 
         if (sortBy.equals("1")) {
@@ -54,7 +57,7 @@ public class TaskManager {
 
         for (Task task : list) {
             System.out.println("Project :" + task.getProject() + "  Title :" + task.getTitle() + "  Due date:" + task.getDueDate() + "  Status :" + (task.getStatus() ? "Done" : "Not done"));
-         }
+        }
 
     }
 
@@ -72,11 +75,11 @@ public class TaskManager {
         System.out.println("Insert title of task to edit");
         Scanner edit = new Scanner(System.in);
         String taskTitle = edit.nextLine();
-        Task currentTask=new Task();
+        Task currentTask = new Task();
         int i = 0;
         for (Task task : list) {
             if (task.getTitle().equals(taskTitle)) {
-                currentTask=task;
+                currentTask = task;
                 break;
             }
             i++;
@@ -96,16 +99,16 @@ public class TaskManager {
                 start.startScreen(list);
             case "1":
                 System.out.println("Rename the project");
-                String f=edit.nextLine();
+                String f = edit.nextLine();
                 currentTask.changeProject(f);
                 break;
             case "2":
                 System.out.println("Change due date");
-               currentTask.changeDueDate(appToDo.insertDate());
+                currentTask.changeDueDate(start.insertDate());
                 break;
             case "3":
                 System.out.println("Change the title");
-                String newTitle=edit.nextLine();
+                String newTitle = edit.nextLine();
                 currentTask.changeTitle(newTitle);
                 break;
             case "4":
@@ -122,6 +125,7 @@ public class TaskManager {
 
     /**
      * The method taskAdd adds a new task to the array list
+     *
      * @param t task added
      */
     public void taskAdd(Task t) {
@@ -133,64 +137,53 @@ public class TaskManager {
      */
     public void displayTasks() {
         for (Task t :
-             tasks) {
+                tasks) {
             System.out.println(t.getTitle());
         }
     }
 
     /**
-     *The method removeTask stores the chosen to remove task in a string and uses the
+     * The method removeTask stores the chosen to remove task in a string and uses the
      * Iterator interface to iterate through the ArrayList and uses .equals to find
      * the title that was given to be removed and removes it.
+     *
      * @param remTask stores the chosen according to title task to be removed
-     * @param list array list that stores the
+     * @param list    array list that stores the
      */
-    public void removeTask(String remTask, ArrayList<Task> list){
+    public void removeTask(String remTask, ArrayList<Task> list) {
         String taskToRemove = remTask;
         Iterator<Task> iterator = list.iterator();
-        while (iterator.hasNext()){
+        while (iterator.hasNext()) {
             Task task = iterator.next();
-            if(task.getTitle().equals(taskToRemove)){
-               iterator.remove();
+            if (task.getTitle().equals(taskToRemove)) {
+                iterator.remove();
             }
         }
     }
 
-    //method that will count the done and undone tasks
-    /*public void countTasks(){
-        int taskDone;
-        int taskTodo;
-
-        for (tasks:list) {
-            int taskDone = 0;
-            int taskTodo = 0;
-            if (task.getStatus() == false) {
-
-                taskTodo++;
-
-
-            } else {
-                taskDone++;
-            }
-        }
-
-        //case 1
-        //loop through the array list
-        //have two variables and count each of done and undone
-
-        //case 2
-        //perhaps use the method for counting according to status
-        //case 3 user streams?
-
-    }*/
 
     /**
      * The method getList fetches the created ArrayList
+     *
      * @return returns the tasks of the list.
      */
-    public ArrayList<Task> getList (){
+    public ArrayList<Task> getList() {
         return tasks;
     }
+
+
+    /**
+     * The method countStatus counts the done and undone statuses of the objects of the ArrayList
+     */
+
+
+    public void countStatus() {
+        int done;
+        int undone;
+
+        done = (int) list.stream().filter(Task::getStatus).count();
+        undone = list.size() - done;
+        System.out.println("You have " + undone + " undone and " + done + " done tasks");
+    }
+
 }
-
-

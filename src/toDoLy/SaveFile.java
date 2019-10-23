@@ -1,10 +1,7 @@
 package toDoLy;
 
 import java.io.*;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -14,6 +11,8 @@ import java.util.stream.Stream;
  */
 public class SaveFile {
 
+
+    TaskManager taskManager = new TaskManager();
     ArrayList<Task> list = new ArrayList<>();
     String CSV_TASKS_OUTPUT = "/Users/pinelopiparaskevopoulou/Desktop/Checklist/CSV_OUTPUT.CSV";
     public File csvOutputFile = new File(CSV_TASKS_OUTPUT);
@@ -34,10 +33,6 @@ public class SaveFile {
         }
     }
 
-    //String tasksToFile = String.join(",", project, title, dueDate, status);
-    //I need to get the original array list
-    // }
-
     /**
      * Transforms the ArrayList into a string with the chosen delimiter ",".
      *
@@ -46,9 +41,7 @@ public class SaveFile {
      */
 
     public String convertToCSV(String tasksToFile) { //I need to get the original array list ArrayList<java.Task> list as a parameter to be written to a file.
-        return Stream.of(tasksToFile)
-                .map(this::escapeSpecialCharacters)
-                .collect(Collectors.joining(","));
+        return Stream.of(tasksToFile).map(this::escapeSpecialCharacters).collect(Collectors.joining(","));
     }
 
     /**
@@ -62,9 +55,7 @@ public class SaveFile {
     public void arrayToOutput(ArrayList<Task> list) throws IOException {
 
         try (PrintWriter pw = new PrintWriter(csvOutputFile)) {
-            list.stream()
-                    .map((Task tasksToFile) -> convertToCSV(tasksToFile.toString()))
-                    .forEach(pw::println);
+            list.stream().map((Task tasksToFile) -> convertToCSV(tasksToFile.toString())).forEach(pw::println);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -74,7 +65,7 @@ public class SaveFile {
     /**
      * This method is used to avoid writing characters like , \ ' as input
      * and creating additional input fields for them.
-     *
+     * @param data
      * @return returns the data after replacing them with space.
      */
 //escape special characters method in order to not create more columns for input
@@ -94,27 +85,22 @@ public class SaveFile {
      */
 
     //reading CSV file
-
+    //return list of read tasks and add to current task list in taskManager
     public void readFile() throws IOException {
 
-    List<List<String>> fileContent = new ArrayList<List<String>>();
+        List<List<String>> fileContent = new ArrayList<List<String>>();
 
-        try(
-    BufferedReader br = new BufferedReader(new FileReader("CSV_OUTPUT.CSV")))
-
-    {
-
-        String line;
-        while ((line = br.readLine()) != null) {
-            String[] taskLine = line.split(",");
-            fileContent.add(Arrays.asList(taskLine));
+        try (
+                BufferedReader br = new BufferedReader(new FileReader("CSV_OUTPUT.CSV"))) {
+            String line;
+            while ((line = br.readLine()) != null) {
+                String[] taskLine = line.split(",");
+                fileContent.add(Arrays.asList(taskLine));
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
         }
-    } catch(
-    FileNotFoundException e)
+        fileContent.stream().forEach(System.out::println);
 
-    {
-        e.printStackTrace();
     }
-}
-
 }

@@ -1,6 +1,9 @@
 package toDoLy;
 
 import java.io.IOException;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.Scanner;
@@ -16,23 +19,17 @@ public class Interface {
     public void startScreen(ArrayList<Task> list) throws IOException {
         SaveFile saveFile = new SaveFile();
         TaskManager taskManager = new TaskManager();
-        AppToDo appToDo = new AppToDo();
         Task task = new Task();
-        Interface start= new Interface();
-        //list.add(
-               // new Task("taskremove", "remove", new Date() )
-        //);
-
+        Interface start = new Interface();
         String menuInput;
 
         Scanner menu = new Scanner(System.in);
 
         while (true) {
 
-            System.out.println("Welcome to toDoLY");
-
-            System.out.println("You have " + /*taskTodo+*/ " and " + /*taskDone*/ "+  tasks are done" ); ///variables are instantiated in java.TaskManager countTasks method
             System.out.println("\n");
+            System.out.println("Welcome to toDoLY");
+            taskManager.countStatus();
             System.out.println("Enter your choice from the menu");
             System.out.println("\n");
             System.out.println(" Menu ");
@@ -46,43 +43,88 @@ public class Interface {
 
             menuInput = menu.nextLine();
 
-
-            /**
-             * switch statement menuInput represents the options of the main menu that are
-             * executed with numerical input from the user that are assigned to every option.
-             */
-            // switch cases written according to options in the menu, 1..2..3 etc. Should I use switch in a switch for the further options in the menu?
             switch (menuInput) {
                 case "1":
                     System.out.println("Sort by 1. Date or 2. project, 0. exit");
 
                     taskManager.sortDisplay(list, menu.nextLine());
-                    //taskManager.displayTasks();
-                    //method ("show");
                     break;
                 case "2":
-                    //taskManager.taskAdd(createTask());
-                    list = appToDo.taskAdd(list);
+                    list = taskAdd(list);
                     break;
                 case "3":
                     taskManager.editOption(list);
                     break;
                 case "4":
                     list.removeAll(list);
-                    //clear list method perhaps from generics
                     break;
                 case "5":
-                    //("Save");
                     saveFile.arrayToOutput(list);
-                    //saveFile.write();
                     break;
-                case"6":
-                    System.out.println("Thank you for using ToDoLy");
+                case "6":
                     menu.close();
+                    System.out.println("Thank you for using ToDoLy");
+                    return;
                 default:
                     System.out.println("You have entered invalid choice. Please try again");
 
             }
         }
+    }
+
+    public ArrayList taskAdd(ArrayList<Task> tasks) {
+        Scanner userInput = new Scanner(System.in);
+
+
+        System.out.println("enter project: ");
+        String project = userInput.nextLine();
+        Scanner titleInput = new Scanner(System.in);
+        System.out.println("enter title: ");
+        String title = titleInput.nextLine();
+        System.out.println(title);
+        System.out.println("enter due date (dd/mm/yyyy) : ");
+
+        Date dueDate = insertDate();
+
+        Task task = new Task(project, title, dueDate);
+
+        tasks.add(task);
+        System.out.println(tasks.size());
+        return tasks;
+    }
+
+    /**
+     * This method handles the due date input from the user and iterates until the valid date
+     * type is given. Printing also messages to notify of invalid or valid input.
+     *
+     * @return the valid due date after validating user's due date input from the user and when repeating it.
+     */
+    public Date insertDate() { //more relevant method name
+        String userDueDateInput;
+        Date validDate;
+        DateFormat format = new SimpleDateFormat("dd/MM/yyyy");
+        format.setLenient(false); // separate date toString from Scanner
+
+        while (true) {
+            Scanner dateInput = new Scanner(System.in);
+            userDueDateInput = dateInput.nextLine();
+
+
+            try {
+                validDate = format.parse(userDueDateInput);
+
+
+
+                System.out.println(userDueDateInput + " date is valid");
+                break;
+
+            } catch (ParseException e) {
+                System.out.println(userDueDateInput + " date is invalid, please enter the date again");
+
+            }
+        }
+
+        Date dueDate = validDate;
+        return dueDate;
     }
 }
