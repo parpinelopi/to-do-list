@@ -4,8 +4,8 @@
 
 This project’s purpose is to help users with the management of their daily tasks. It is a checklist where all tasks that need to be done daily are listed and  can managed  (edited, added, deleted, sorted,  marked as completed and saved to file) via the menu interface. 
 
-![](mainMenu.png =90x50)
-![](subMenu.png =90x50)
+![](.mainMenu.png =90x50)
+![](.subMenu.png =90x50)
 
 
 ## Getting Started
