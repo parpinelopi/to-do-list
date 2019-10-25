@@ -7,13 +7,13 @@ This project’s purpose is to help users with the management of their daily tas
 
 ## Getting Started
 
-### Read through the instructions for running the program on your computer. 
+Read through the instructions for running the program on your computer. 
 
 
 ## Prerequisites
 
 For running the application on the computer a code editor is required, such as IntelliJ, Visual Studio Code etc. 
-**JUnit ** plugin for running the tests
+**JUnit** plugin for running the tests
 
 # Installing
 In order to run ToDoLy on your computer clone the application folder via the terminal, after the folder is created in the assigned location, open a code  editor and add the application folder (open project).Finally, when the project has loaded, run ‘Main’ and interact with the application via the menu that will appear on the code editor console by giving input according to  instructions that will be displayed on the terminal. 
@@ -53,4 +53,4 @@ Thank you:
 
 
 
-Access to my [task board for the project](https://trello.com/invite/b/aUi7NWE8/1a66bb5040e717c9c4b202808aea680d/java-project)
+Access to [ToDoLy Trello board for the project](https://trello.com/invite/b/aUi7NWE8/1a66bb5040e717c9c4b202808aea680d/java-project)
