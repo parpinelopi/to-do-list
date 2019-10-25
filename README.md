@@ -4,6 +4,9 @@
 
 This project’s purpose is to help users with the management of their daily tasks. It is a checklist where all tasks that need to be done daily are listed and  can managed  (edited, added, deleted, sorted,  marked as completed and saved to file) via the menu interface. 
 
+![](mainMenu.png)
+![](subMenu.png)
+
 
 ## Getting Started
 
@@ -28,9 +31,9 @@ The application folder includes a test package that tests some of the functions.
 Three types of tests were considered of special interest. The test for checking the creation of a CSV file that stores the tasks and if the tasks are properly read from the file and if the formatting is consistent. Additional tests were done for the sorting of the task list according to date and to project. 
 
 The following methods were created 
--sortTask (JUnit method : *assertEquals*)
--csvFileCreation (JUnit method : *assertTrue*)
--readFromFile(JUnit method : *assertEquals*)
+*sortTask (JUnit method : *assertEquals*)
+*csvFileCreation (JUnit method : *assertTrue*)
+*readFromFile(JUnit method : *assertEquals*)
 
 ## Built with 
 Java API
