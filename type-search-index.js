@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"toDoLy","l":"Interface"},{"p":"toDoLy","l":"Main"},{"p":"toDoLy","l":"SaveFile"},{"p":"toDoLy","l":"Task"},{"p":"toDoLy","l":"TaskManager"}]
