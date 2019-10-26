@@ -1,6 +1,7 @@
 package toDoLy;
 
 import java.io.IOException;
+import java.text.ParseException;
 import java.util.*;
 
 /**
@@ -12,11 +13,8 @@ import java.util.*;
 
 public class TaskManager {
 
-    //private
+
     private ArrayList<Task> tasks = new ArrayList<Task>();
-    private ArrayList<Task> list = new ArrayList<>();
-    private  List<List<String>> fileContent = new ArrayList<List<String>>();
-    private Task task = new Task();
     private Interface start = new Interface();
 
 
@@ -71,7 +69,7 @@ public class TaskManager {
      * @throws IOException
      */
 
-    public void editOption(ArrayList<Task> list) throws IOException {
+    public void editOption(ArrayList<Task> list) throws IOException, ParseException {
         System.out.println("Insert title of task to edit");
         Scanner edit = new Scanner(System.in);
         String taskTitle = edit.nextLine();
@@ -94,7 +92,7 @@ public class TaskManager {
         System.out.println("0. Return to previous");
         String taskOption = edit.nextLine();
 
-        switch (taskOption) { //enter attributes for the methods
+        switch (taskOption) {
             case "0":
                 start.startScreen(list);
             case "1":
@@ -124,25 +122,6 @@ public class TaskManager {
     }
 
     /**
-     * The method taskAdd adds a new task to the array list
-     *
-     * @param t task added
-     */
-    public void taskAdd(Task t) {
-        tasks.add(t);
-    }
-
-    /**
-     * The method displayTasks displays the tasks from the option
-     */
-    public void displayTasks() {
-        for (Task t :
-                tasks) {
-            System.out.println(t.getTitle());
-        }
-    }
-
-    /**
      * The method removeTask stores the chosen to remove task in a string and uses the
      * Iterator interface to iterate through the ArrayList and uses .equals to find
      * the title that was given to be removed and removes it.
@@ -161,7 +140,6 @@ public class TaskManager {
         }
     }
 
-
     /**
      * The method getList fetches the created ArrayList
      *
@@ -171,11 +149,9 @@ public class TaskManager {
         return tasks;
     }
 
-
     /**
      * The method countStatus counts the done and undone statuses of the objects of the ArrayList
      */
-
 
     public void countStatus(ArrayList<Task> list) {
         int undone;
@@ -184,5 +160,4 @@ public class TaskManager {
         undone = list.size() - done;
         System.out.println("You have " + undone + " undone and " + done + " done tasks");
     }
-
 }

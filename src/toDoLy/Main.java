@@ -1,5 +1,6 @@
 package toDoLy;
 import java.io.IOException;
+import java.text.ParseException;
 import java.util.ArrayList;
 
 /**
@@ -7,10 +8,10 @@ import java.util.ArrayList;
  */
 public class Main {
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, ParseException {
         Interface screen = new Interface();
 
-        ArrayList<Task> tasks = new ArrayList<Task>(); //probably need to be removed
+        ArrayList<Task> tasks = new ArrayList<Task>();
         screen.startScreen (tasks);
 
     }

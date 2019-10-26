@@ -1,5 +1,6 @@
 package toDoLy;
 
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.text.DateFormat;
 import java.text.ParseException;
@@ -16,11 +17,9 @@ import java.util.Scanner;
 
 public class Interface {
 
-    public void startScreen(ArrayList<Task> list) throws IOException {
+    public void startScreen(ArrayList<Task> list) throws IOException, ParseException {
         SaveFile saveFile = new SaveFile();
         TaskManager taskManager = new TaskManager();
-        Task task = new Task();
-        Interface start = new Interface();
         String menuInput;
 
         Scanner menu = new Scanner(System.in);
@@ -29,6 +28,13 @@ public class Interface {
 
             System.out.println("\n");
             System.out.println("Welcome to toDoLY");
+
+            try{
+                saveFile.readFile();
+            }
+            catch(FileNotFoundException ex){
+                ex.printStackTrace();
+            }
             taskManager.countStatus(list);
             System.out.println("Enter your choice from the menu");
             System.out.println("\n");
@@ -81,7 +87,6 @@ public class Interface {
         Scanner titleInput = new Scanner(System.in);
         System.out.println("enter title: ");
         String title = titleInput.nextLine();
-        System.out.println(title);
         System.out.println("enter due date (dd/mm/yyyy) : ");
 
         Date dueDate = insertDate();
@@ -99,12 +104,12 @@ public class Interface {
      *
      * @return the valid due date after validating user's due date input from the user and when repeating it.
      */
-    public Date insertDate() { //more relevant method name
+    public Date insertDate() {
+
         String userDueDateInput;
         Date validDate;
         DateFormat format = new SimpleDateFormat("dd/MM/yyyy");
-        format.setLenient(false); // separate date toString from Scanner
-
+        format.setLenient(false);
         while (true) {
             Scanner dateInput = new Scanner(System.in);
             userDueDateInput = dateInput.nextLine();

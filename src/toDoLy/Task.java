@@ -1,5 +1,7 @@
 package toDoLy;
 
+import java.text.DateFormat;
+import java.time.Instant;
 import java.util.ArrayList;
 import java.util.Date;
 import java.lang.String;
@@ -8,14 +10,14 @@ import java.lang.String;
 /**
  * Class Task contains the field constructor of the task parameters
  * as well as the constructor of the Task.
- * @author
- * @version
+ * @author pinelopiparaskevopoulou
+ * @version 5.6
  */
 
 public class Task {
-    //use list in taskManager instead
+
     ArrayList<Task> list = new ArrayList();
-    private String Project; //should I make them non capital?
+    private String Project;
     private String Title;
     private Date DueDate;
     private boolean Status;
@@ -27,6 +29,7 @@ public class Task {
         DueDate = dueDate;
         Status = false;
     }
+
 
     public Task() {
 
@@ -131,11 +134,38 @@ public class Task {
 //method for the writing to file
     @Override
     public String toString() {
-        return (Project + " " + Title + " " + DueDate + " " + Status);
+        return (Project + ";" + Title + ";" + DateFormat.getDateTimeInstance().format(DueDate) + ";" + Status);
     }
 
+    /**
+     * This method adjusts the date in order for it to be read without adding milliseconds to the time
+     * @param o
+     * @return adjusted format
+     */
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
 
+        Task task = (Task) o;
 
+        Instant dueInstant = DueDate.toInstant();
+        Instant otherDueInstant = task.DueDate.toInstant();
+
+        if (Status != task.Status) return false;
+        if (!Project.equals(task.Project)) return false;
+        if (!Title.equals(task.Title)) return false;
+        return dueInstant.minusSeconds(1).isBefore(otherDueInstant) && dueInstant.plusSeconds(1).isAfter(otherDueInstant);
+    }
+
+    @Override
+    public int hashCode() {
+        int result = Project.hashCode();
+        result = 31 * result + Title.hashCode();
+        result = 31 * result + DueDate.hashCode();
+        result = 31 * result + (Status ? 1 : 0);
+        return result;
+    }
 }
 
 
